@@ -1,0 +1,115 @@
+/*
+Fonts
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+:root {
+
+    font-size: 62.5%;
+
+  --ff-heading: 'Montserrat', sans-serif;
+  --ff-texting: 'DM Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD);
+  font-size: 1.6rem;
+
+  /* Alinhando os itens com o display grid */
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+
+body, button, input {
+  font-family: var(--ff-texting);
+}
+
+button {
+  background-color: #7879f1;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 .4rem .4rem 0;
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background-color: #4e4e9e;
+}
+
+.hide {
+  display: none;
+}
+
+
+main {
+  background: #ffffff;
+  box-shadow: 0rem 0.2px 0.4px rgba(0, 0,0, 0.1);
+  /* Eixo X, Eixo Y, Blur */
+  border-radius: 0.6px;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  /* Pega o mínimo entre dois valores, (valor, se ficar menor que o valor)  */
+  width: min(42.8rem, 90%);
+  /* margin: 0 auto; */
+  margin-top: -12rem;
+
+  text-align: center;
+}
+
+/* Screen 1*/
+
+h1 {
+  font-family: var(--ff-heading);
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1, p {
+  color: #34355b;
+}
+
+
+P {
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background-color: #dce2e9;
+  width: 6rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+/* Screen2 */
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+}
